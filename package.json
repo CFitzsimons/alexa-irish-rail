@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node .",
     "build": "cpx -u \"./**/!(out|lambda-upload.zip)\" out && (cd out && npm prune --production) && (cd out && bestzip ../lambda-upload.zip ./)",
+    "scrape": "node ./src/scrapers/stations.js",
     "test": "mocha"
   },
   "author": "Yulfy",
@@ -19,6 +20,10 @@
     "eslint-plugin-mocha": "^4.11.0"
   },
   "dependencies": {
-    "alexa-sdk": "^1.0.11"
+    "alexa-sdk": "^1.0.11",
+    "aws-sdk": "^2.113.0",
+    "dynamodb-doc": "^1.0.0",
+    "request": "^2.81.0",
+    "xml2js": "^0.4.19"
   }
 }
