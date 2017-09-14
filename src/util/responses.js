@@ -3,4 +3,5 @@ module.exports = {
   NO_FAVOURITE_REPEAT: 'Please say favourite followed by the station you want saved.',
   NO_DIRECTION_ATTRIBUTE: 'A session error has occured, could you let my skill developer know?',
   NO_TRAINS: 'There are no trains going that direction, sorry.',
+  NO_SERVICE: 'There are no services running until at least tomorrow, sorry.',
 };

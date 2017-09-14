@@ -84,8 +84,12 @@ class RealTimeDart {
 
   getDestinations() {
     return new Promise((resolve) => {
-      if (this.destinationList) {
+      if (this.destinationList && this.destinationList.length > 0) {
         resolve(RealTimeDart.humanReadableDestinations(this.destinationList));
+        return;
+      }
+      if (this.destinationList && this.destinationList.length === 0) {
+        resolve('NONE');
         return;
       }
       this.buildDestinationList().then(() => {
@@ -120,7 +124,11 @@ class RealTimeDart {
     return new Promise((resolve) => {
       request(url, (error, response, body) => {
         parseString(body, (err, result) => {
-          this.stationData = result.ArrayOfObjStationData.objStationData;
+          if (!result.ArrayOfObjStationData || !result.ArrayOfObjStationData.objStationData) {
+            this.stationData = [];
+          } else {
+            this.stationData = result.ArrayOfObjStationData.objStationData;
+          }
           resolve(this.stationData);
         });
       });

@@ -1,6 +1,6 @@
 const DatabaseProxy = require('../util/database');
 
-const { NO_FAVOURITE, NO_DIRECTION_ATTRIBUTE, NO_FAVOURITE_REPEAT, NO_TRAINS } = require('../util/responses');
+const { NO_FAVOURITE, NO_DIRECTION_ATTRIBUTE, NO_FAVOURITE_REPEAT, NO_TRAINS, NO_SERVICE } = require('../util/responses');
 const { REALTIME_SESSION } = require('../util/constants');
 const RealTimeDart = require('../util/realTimeDart');
 
@@ -73,6 +73,10 @@ module.exports = {
             /* Preform lookup */
             const times = new RealTimeDart(response.Item.Station);
             times.getDestinations().then((res) => {
+              if (res === 'NONE') {
+                this.emit(':tell', NO_SERVICE, NO_SERVICE);
+                return;
+              }
               this.attributes[REALTIME_SESSION] = times.getState();
               this.emit(':ask', res, res);
             });
