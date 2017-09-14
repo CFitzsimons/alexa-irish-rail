@@ -1,0 +1,661 @@
+{
+ "ArrayOfObjStationData": {
+  "$": {
+   "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+   "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+   "xmlns": "http://api.irishrail.ie/realtime/"
+  },
+  "objStationData": [
+   {
+    "Servertime": [
+     "2017-09-14T20:39:34.653"
+    ],
+    "Traincode": [
+     "D258 "
+    ],
+    "Stationfullname": [
+     "Cork"
+    ],
+    "Stationcode": [
+     "CORK"
+    ],
+    "Querytime": [
+     "20:39:34"
+    ],
+    "Traindate": [
+     "14 Sep 2017"
+    ],
+    "Origin": [
+     "Cork"
+    ],
+    "Destination": [
+     "Cobh"
+    ],
+    "Origintime": [
+     "21:00"
+    ],
+    "Destinationtime": [
+     "21:24"
+    ],
+    "Status": [
+     "No Information"
+    ],
+    "Lastlocation": [
+     ""
+    ],
+    "Duein": [
+     "21"
+    ],
+    "Late": [
+     "0"
+    ],
+    "Exparrival": [
+     "00:00"
+    ],
+    "Expdepart": [
+     "21:00"
+    ],
+    "Scharrival": [
+     "00:00"
+    ],
+    "Schdepart": [
+     "21:00"
+    ],
+    "Direction": [
+     "To Cobh"
+    ],
+    "Traintype": [
+     "Train"
+    ],
+    "Locationtype": [
+     "O"
+    ]
+   },
+   {
+    "Servertime": [
+     "2017-09-14T20:39:34.653"
+    ],
+    "Traincode": [
+     "P256 "
+    ],
+    "Stationfullname": [
+     "Cork"
+    ],
+    "Stationcode": [
+     "CORK"
+    ],
+    "Querytime": [
+     "20:39:34"
+    ],
+    "Traindate": [
+     "14 Sep 2017"
+    ],
+    "Origin": [
+     "Cobh"
+    ],
+    "Destination": [
+     "Cork"
+    ],
+    "Origintime": [
+     "20:30"
+    ],
+    "Destinationtime": [
+     "20:54"
+    ],
+    "Status": [
+     "No Information"
+    ],
+    "Lastlocation": [
+     ""
+    ],
+    "Duein": [
+     "15"
+    ],
+    "Late": [
+     "0"
+    ],
+    "Exparrival": [
+     "20:54"
+    ],
+    "Expdepart": [
+     "00:00"
+    ],
+    "Scharrival": [
+     "20:54"
+    ],
+    "Schdepart": [
+     "00:00"
+    ],
+    "Direction": [
+     "To Cork"
+    ],
+    "Traintype": [
+     "Train"
+    ],
+    "Locationtype": [
+     "D"
+    ]
+   },
+   {
+    "Servertime": [
+     "2017-09-14T20:39:34.653"
+    ],
+    "Traincode": [
+     "A315 "
+    ],
+    "Stationfullname": [
+     "Cork"
+    ],
+    "Stationcode": [
+     "CORK"
+    ],
+    "Querytime": [
+     "20:39:34"
+    ],
+    "Traindate": [
+     "14 Sep 2017"
+    ],
+    "Origin": [
+     "Tralee"
+    ],
+    "Destination": [
+     "Cork"
+    ],
+    "Origintime": [
+     "19:05"
+    ],
+    "Destinationtime": [
+     "21:05"
+    ],
+    "Status": [
+     "En Route"
+    ],
+    "Lastlocation": [
+     "Arrived Mallow"
+    ],
+    "Duein": [
+     "26"
+    ],
+    "Late": [
+     "0"
+    ],
+    "Exparrival": [
+     "21:05"
+    ],
+    "Expdepart": [
+     "00:00"
+    ],
+    "Scharrival": [
+     "21:05"
+    ],
+    "Schdepart": [
+     "00:00"
+    ],
+    "Direction": [
+     "To Cork"
+    ],
+    "Traintype": [
+     "Train"
+    ],
+    "Locationtype": [
+     "D"
+    ]
+   },
+   {
+    "Servertime": [
+     "2017-09-14T20:39:34.653"
+    ],
+    "Traincode": [
+     "P289 "
+    ],
+    "Stationfullname": [
+     "Cork"
+    ],
+    "Stationcode": [
+     "CORK"
+    ],
+    "Querytime": [
+     "20:39:34"
+    ],
+    "Traindate": [
+     "14 Sep 2017"
+    ],
+    "Origin": [
+     "Midleton"
+    ],
+    "Destination": [
+     "Cork"
+    ],
+    "Origintime": [
+     "20:45"
+    ],
+    "Destinationtime": [
+     "21:08"
+    ],
+    "Status": [
+     "No Information"
+    ],
+    "Lastlocation": [
+     ""
+    ],
+    "Duein": [
+     "29"
+    ],
+    "Late": [
+     "0"
+    ],
+    "Exparrival": [
+     "21:08"
+    ],
+    "Expdepart": [
+     "00:00"
+    ],
+    "Scharrival": [
+     "21:08"
+    ],
+    "Schdepart": [
+     "00:00"
+    ],
+    "Direction": [
+     "To Cork"
+    ],
+    "Traintype": [
+     "Train"
+    ],
+    "Locationtype": [
+     "D"
+    ]
+   },
+   {
+    "Servertime": [
+     "2017-09-14T20:39:34.653"
+    ],
+    "Traincode": [
+     "A226 "
+    ],
+    "Stationfullname": [
+     "Cork"
+    ],
+    "Stationcode": [
+     "CORK"
+    ],
+    "Querytime": [
+     "20:39:34"
+    ],
+    "Traindate": [
+     "14 Sep 2017"
+    ],
+    "Origin": [
+     "Dublin Heuston"
+    ],
+    "Destination": [
+     "Cork"
+    ],
+    "Origintime": [
+     "19:00"
+    ],
+    "Destinationtime": [
+     "21:47"
+    ],
+    "Status": [
+     "En Route"
+    ],
+    "Lastlocation": [
+     "Departed Thurles"
+    ],
+    "Duein": [
+     "70"
+    ],
+    "Late": [
+     "2"
+    ],
+    "Exparrival": [
+     "21:49"
+    ],
+    "Expdepart": [
+     "00:00"
+    ],
+    "Scharrival": [
+     "21:47"
+    ],
+    "Schdepart": [
+     "00:00"
+    ],
+    "Direction": [
+     "To Cork"
+    ],
+    "Traintype": [
+     "Train"
+    ],
+    "Locationtype": [
+     "D"
+    ]
+   },
+   {
+    "Servertime": [
+     "2017-09-14T20:39:34.653"
+    ],
+    "Traincode": [
+     "P257 "
+    ],
+    "Stationfullname": [
+     "Cork"
+    ],
+    "Stationcode": [
+     "CORK"
+    ],
+    "Querytime": [
+     "20:39:34"
+    ],
+    "Traindate": [
+     "14 Sep 2017"
+    ],
+    "Origin": [
+     "Cobh"
+    ],
+    "Destination": [
+     "Cork"
+    ],
+    "Origintime": [
+     "21:30"
+    ],
+    "Destinationtime": [
+     "21:54"
+    ],
+    "Status": [
+     "No Information"
+    ],
+    "Lastlocation": [
+     ""
+    ],
+    "Duein": [
+     "75"
+    ],
+    "Late": [
+     "0"
+    ],
+    "Exparrival": [
+     "21:54"
+    ],
+    "Expdepart": [
+     "00:00"
+    ],
+    "Scharrival": [
+     "21:54"
+    ],
+    "Schdepart": [
+     "00:00"
+    ],
+    "Direction": [
+     "To Cork"
+    ],
+    "Traintype": [
+     "Train"
+    ],
+    "Locationtype": [
+     "D"
+    ]
+   },
+   {
+    "Servertime": [
+     "2017-09-14T20:39:34.653"
+    ],
+    "Traincode": [
+     "P290 "
+    ],
+    "Stationfullname": [
+     "Cork"
+    ],
+    "Stationcode": [
+     "CORK"
+    ],
+    "Querytime": [
+     "20:39:34"
+    ],
+    "Traindate": [
+     "14 Sep 2017"
+    ],
+    "Origin": [
+     "Midleton"
+    ],
+    "Destination": [
+     "Cork"
+    ],
+    "Origintime": [
+     "21:45"
+    ],
+    "Destinationtime": [
+     "22:08"
+    ],
+    "Status": [
+     "No Information"
+    ],
+    "Lastlocation": [
+     ""
+    ],
+    "Duein": [
+     "89"
+    ],
+    "Late": [
+     "0"
+    ],
+    "Exparrival": [
+     "22:08"
+    ],
+    "Expdepart": [
+     "00:00"
+    ],
+    "Scharrival": [
+     "22:08"
+    ],
+    "Schdepart": [
+     "00:00"
+    ],
+    "Direction": [
+     "To Cork"
+    ],
+    "Traintype": [
+     "Train"
+    ],
+    "Locationtype": [
+     "D"
+    ]
+   },
+   {
+    "Servertime": [
+     "2017-09-14T20:39:34.653"
+    ],
+    "Traincode": [
+     "P258 "
+    ],
+    "Stationfullname": [
+     "Cork"
+    ],
+    "Stationcode": [
+     "CORK"
+    ],
+    "Querytime": [
+     "20:39:34"
+    ],
+    "Traindate": [
+     "14 Sep 2017"
+    ],
+    "Origin": [
+     "Cork"
+    ],
+    "Destination": [
+     "Mallow"
+    ],
+    "Origintime": [
+     "22:00"
+    ],
+    "Destinationtime": [
+     "22:26"
+    ],
+    "Status": [
+     "No Information"
+    ],
+    "Lastlocation": [
+     ""
+    ],
+    "Duein": [
+     "81"
+    ],
+    "Late": [
+     "0"
+    ],
+    "Exparrival": [
+     "00:00"
+    ],
+    "Expdepart": [
+     "22:00"
+    ],
+    "Scharrival": [
+     "00:00"
+    ],
+    "Schdepart": [
+     "22:00"
+    ],
+    "Direction": [
+     "To Mallow"
+    ],
+    "Traintype": [
+     "Train"
+    ],
+    "Locationtype": [
+     "O"
+    ]
+   },
+   {
+    "Servertime": [
+     "2017-09-14T20:39:34.653"
+    ],
+    "Traincode": [
+     "D290 "
+    ],
+    "Stationfullname": [
+     "Cork"
+    ],
+    "Stationcode": [
+     "CORK"
+    ],
+    "Querytime": [
+     "20:39:34"
+    ],
+    "Traindate": [
+     "14 Sep 2017"
+    ],
+    "Origin": [
+     "Cork"
+    ],
+    "Destination": [
+     "Midleton"
+    ],
+    "Origintime": [
+     "21:15"
+    ],
+    "Destinationtime": [
+     "21:38"
+    ],
+    "Status": [
+     "No Information"
+    ],
+    "Lastlocation": [
+     ""
+    ],
+    "Duein": [
+     "36"
+    ],
+    "Late": [
+     "0"
+    ],
+    "Exparrival": [
+     "00:00"
+    ],
+    "Expdepart": [
+     "21:15"
+    ],
+    "Scharrival": [
+     "00:00"
+    ],
+    "Schdepart": [
+     "21:15"
+    ],
+    "Direction": [
+     "To Midleton"
+    ],
+    "Traintype": [
+     "Train"
+    ],
+    "Locationtype": [
+     "O"
+    ]
+   },
+   {
+    "Servertime": [
+     "2017-09-14T20:39:34.653"
+    ],
+    "Traincode": [
+     "A314 "
+    ],
+    "Stationfullname": [
+     "Cork"
+    ],
+    "Stationcode": [
+     "CORK"
+    ],
+    "Querytime": [
+     "20:39:34"
+    ],
+    "Traindate": [
+     "14 Sep 2017"
+    ],
+    "Origin": [
+     "Cork"
+    ],
+    "Destination": [
+     "Tralee"
+    ],
+    "Origintime": [
+     "20:55"
+    ],
+    "Destinationtime": [
+     "22:55"
+    ],
+    "Status": [
+     "No Information"
+    ],
+    "Lastlocation": [
+     ""
+    ],
+    "Duein": [
+     "16"
+    ],
+    "Late": [
+     "0"
+    ],
+    "Exparrival": [
+     "00:00"
+    ],
+    "Expdepart": [
+     "20:55"
+    ],
+    "Scharrival": [
+     "00:00"
+    ],
+    "Schdepart": [
+     "20:55"
+    ],
+    "Direction": [
+     "To Tralee"
+    ],
+    "Traintype": [
+     "Train"
+    ],
+    "Locationtype": [
+     "O"
+    ]
+   }
+  ]
+ }
+}

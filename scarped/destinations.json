@@ -1,0 +1,93 @@
+[
+ {
+  "id": null,
+  "name": {
+   "value": "northbound",
+   "synonyms": []
+  }
+ },
+ {
+  "id": null,
+  "name": {
+   "value": "southbound",
+   "synonyms": []
+  }
+ },
+ {
+  "id": null,
+  "name": {
+   "value": "to dublin heuston",
+   "synonyms": []
+  }
+ },
+ {
+  "id": null,
+  "name": {
+   "value": "to portlaoise",
+   "synonyms": []
+  }
+ },
+ {
+  "id": null,
+  "name": {
+   "value": "to athlone",
+   "synonyms": []
+  }
+ },
+ {
+  "id": null,
+  "name": {
+   "value": "to galway",
+   "synonyms": []
+  }
+ },
+ {
+  "id": null,
+  "name": {
+   "value": "to cork",
+   "synonyms": []
+  }
+ },
+ {
+  "id": null,
+  "name": {
+   "value": "to carlow",
+   "synonyms": []
+  }
+ },
+ {
+  "id": null,
+  "name": {
+   "value": "to limerick",
+   "synonyms": []
+  }
+ },
+ {
+  "id": null,
+  "name": {
+   "value": "to tralee",
+   "synonyms": []
+  }
+ },
+ {
+  "id": null,
+  "name": {
+   "value": "to mallow",
+   "synonyms": []
+  }
+ },
+ {
+  "id": null,
+  "name": {
+   "value": "to midleton",
+   "synonyms": []
+  }
+ },
+ {
+  "id": null,
+  "name": {
+   "value": "to cobh",
+   "synonyms": []
+  }
+ }
+]

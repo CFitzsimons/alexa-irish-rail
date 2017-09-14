@@ -1,0 +1,401 @@
+{
+ "ArrayOfObjStationData": {
+  "$": {
+   "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+   "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+   "xmlns": "http://api.irishrail.ie/realtime/"
+  },
+  "objStationData": [
+   {
+    "Servertime": [
+     "2017-09-14T20:39:34.643"
+    ],
+    "Traincode": [
+     "E933 "
+    ],
+    "Stationfullname": [
+     "Sutton"
+    ],
+    "Stationcode": [
+     "SUTTN"
+    ],
+    "Querytime": [
+     "20:39:34"
+    ],
+    "Traindate": [
+     "14 Sep 2017"
+    ],
+    "Origin": [
+     "Bray"
+    ],
+    "Destination": [
+     "Howth"
+    ],
+    "Origintime": [
+     "19:55"
+    ],
+    "Destinationtime": [
+     "21:02"
+    ],
+    "Status": [
+     "En Route"
+    ],
+    "Lastlocation": [
+     "Arrived Tara Street"
+    ],
+    "Duein": [
+     "23"
+    ],
+    "Late": [
+     "5"
+    ],
+    "Exparrival": [
+     "21:02"
+    ],
+    "Expdepart": [
+     "21:02"
+    ],
+    "Scharrival": [
+     "20:57"
+    ],
+    "Schdepart": [
+     "20:57"
+    ],
+    "Direction": [
+     "Northbound"
+    ],
+    "Traintype": [
+     "DART"
+    ],
+    "Locationtype": [
+     "S"
+    ]
+   },
+   {
+    "Servertime": [
+     "2017-09-14T20:39:34.643"
+    ],
+    "Traincode": [
+     "E934 "
+    ],
+    "Stationfullname": [
+     "Sutton"
+    ],
+    "Stationcode": [
+     "SUTTN"
+    ],
+    "Querytime": [
+     "20:39:34"
+    ],
+    "Traindate": [
+     "14 Sep 2017"
+    ],
+    "Origin": [
+     "Bray"
+    ],
+    "Destination": [
+     "Howth"
+    ],
+    "Origintime": [
+     "20:25"
+    ],
+    "Destinationtime": [
+     "21:33"
+    ],
+    "Status": [
+     "En Route"
+    ],
+    "Lastlocation": [
+     "Arrived Glenageary"
+    ],
+    "Duein": [
+     "49"
+    ],
+    "Late": [
+     "-1"
+    ],
+    "Exparrival": [
+     "21:28"
+    ],
+    "Expdepart": [
+     "21:28"
+    ],
+    "Scharrival": [
+     "21:28"
+    ],
+    "Schdepart": [
+     "21:29"
+    ],
+    "Direction": [
+     "Northbound"
+    ],
+    "Traintype": [
+     "DART"
+    ],
+    "Locationtype": [
+     "S"
+    ]
+   },
+   {
+    "Servertime": [
+     "2017-09-14T20:39:34.643"
+    ],
+    "Traincode": [
+     "E935 "
+    ],
+    "Stationfullname": [
+     "Sutton"
+    ],
+    "Stationcode": [
+     "SUTTN"
+    ],
+    "Querytime": [
+     "20:39:34"
+    ],
+    "Traindate": [
+     "14 Sep 2017"
+    ],
+    "Origin": [
+     "Bray"
+    ],
+    "Destination": [
+     "Howth"
+    ],
+    "Origintime": [
+     "20:55"
+    ],
+    "Destinationtime": [
+     "22:04"
+    ],
+    "Status": [
+     "No Information"
+    ],
+    "Lastlocation": [
+     ""
+    ],
+    "Duein": [
+     "81"
+    ],
+    "Late": [
+     "0"
+    ],
+    "Exparrival": [
+     "21:59"
+    ],
+    "Expdepart": [
+     "22:00"
+    ],
+    "Scharrival": [
+     "21:59"
+    ],
+    "Schdepart": [
+     "22:00"
+    ],
+    "Direction": [
+     "Northbound"
+    ],
+    "Traintype": [
+     "DART"
+    ],
+    "Locationtype": [
+     "S"
+    ]
+   },
+   {
+    "Servertime": [
+     "2017-09-14T20:39:34.643"
+    ],
+    "Traincode": [
+     "E230 "
+    ],
+    "Stationfullname": [
+     "Sutton"
+    ],
+    "Stationcode": [
+     "SUTTN"
+    ],
+    "Querytime": [
+     "20:39:34"
+    ],
+    "Traindate": [
+     "14 Sep 2017"
+    ],
+    "Origin": [
+     "Howth"
+    ],
+    "Destination": [
+     "Bray"
+    ],
+    "Origintime": [
+     "20:45"
+    ],
+    "Destinationtime": [
+     "21:57"
+    ],
+    "Status": [
+     "No Information"
+    ],
+    "Lastlocation": [
+     ""
+    ],
+    "Duein": [
+     "9"
+    ],
+    "Late": [
+     "0"
+    ],
+    "Exparrival": [
+     "20:48"
+    ],
+    "Expdepart": [
+     "20:48"
+    ],
+    "Scharrival": [
+     "20:48"
+    ],
+    "Schdepart": [
+     "20:48"
+    ],
+    "Direction": [
+     "Southbound"
+    ],
+    "Traintype": [
+     "DART"
+    ],
+    "Locationtype": [
+     "S"
+    ]
+   },
+   {
+    "Servertime": [
+     "2017-09-14T20:39:34.643"
+    ],
+    "Traincode": [
+     "E231 "
+    ],
+    "Stationfullname": [
+     "Sutton"
+    ],
+    "Stationcode": [
+     "SUTTN"
+    ],
+    "Querytime": [
+     "20:39:34"
+    ],
+    "Traindate": [
+     "14 Sep 2017"
+    ],
+    "Origin": [
+     "Howth"
+    ],
+    "Destination": [
+     "Bray"
+    ],
+    "Origintime": [
+     "21:15"
+    ],
+    "Destinationtime": [
+     "22:24"
+    ],
+    "Status": [
+     "No Information"
+    ],
+    "Lastlocation": [
+     ""
+    ],
+    "Duein": [
+     "39"
+    ],
+    "Late": [
+     "0"
+    ],
+    "Exparrival": [
+     "21:18"
+    ],
+    "Expdepart": [
+     "21:18"
+    ],
+    "Scharrival": [
+     "21:18"
+    ],
+    "Schdepart": [
+     "21:18"
+    ],
+    "Direction": [
+     "Southbound"
+    ],
+    "Traintype": [
+     "DART"
+    ],
+    "Locationtype": [
+     "S"
+    ]
+   },
+   {
+    "Servertime": [
+     "2017-09-14T20:39:34.643"
+    ],
+    "Traincode": [
+     "E232 "
+    ],
+    "Stationfullname": [
+     "Sutton"
+    ],
+    "Stationcode": [
+     "SUTTN"
+    ],
+    "Querytime": [
+     "20:39:34"
+    ],
+    "Traindate": [
+     "14 Sep 2017"
+    ],
+    "Origin": [
+     "Howth"
+    ],
+    "Destination": [
+     "Bray"
+    ],
+    "Origintime": [
+     "21:45"
+    ],
+    "Destinationtime": [
+     "22:54"
+    ],
+    "Status": [
+     "No Information"
+    ],
+    "Lastlocation": [
+     ""
+    ],
+    "Duein": [
+     "69"
+    ],
+    "Late": [
+     "0"
+    ],
+    "Exparrival": [
+     "21:48"
+    ],
+    "Expdepart": [
+     "21:48"
+    ],
+    "Scharrival": [
+     "21:48"
+    ],
+    "Schdepart": [
+     "21:48"
+    ],
+    "Direction": [
+     "Southbound"
+    ],
+    "Traintype": [
+     "DART"
+    ],
+    "Locationtype": [
+     "S"
+    ]
+   }
+  ]
+ }
+}

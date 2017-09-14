@@ -1,0 +1,791 @@
+{
+ "ArrayOfObjStationData": {
+  "$": {
+   "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+   "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+   "xmlns": "http://api.irishrail.ie/realtime/"
+  },
+  "objStationData": [
+   {
+    "Servertime": [
+     "2017-09-14T20:39:34.65"
+    ],
+    "Traincode": [
+     "E830 "
+    ],
+    "Stationfullname": [
+     "Bray"
+    ],
+    "Stationcode": [
+     "BRAY"
+    ],
+    "Querytime": [
+     "20:39:34"
+    ],
+    "Traindate": [
+     "14 Sep 2017"
+    ],
+    "Origin": [
+     "Greystones"
+    ],
+    "Destination": [
+     "Malahide"
+    ],
+    "Origintime": [
+     "20:30"
+    ],
+    "Destinationtime": [
+     "21:50"
+    ],
+    "Status": [
+     "En Route"
+    ],
+    "Lastlocation": [
+     "Departed Greystones"
+    ],
+    "Duein": [
+     "1"
+    ],
+    "Late": [
+     "0"
+    ],
+    "Exparrival": [
+     "20:39"
+    ],
+    "Expdepart": [
+     "20:40"
+    ],
+    "Scharrival": [
+     "20:39"
+    ],
+    "Schdepart": [
+     "20:40"
+    ],
+    "Direction": [
+     "Northbound"
+    ],
+    "Traintype": [
+     "DART"
+    ],
+    "Locationtype": [
+     "S"
+    ]
+   },
+   {
+    "Servertime": [
+     "2017-09-14T20:39:34.65"
+    ],
+    "Traincode": [
+     "E935 "
+    ],
+    "Stationfullname": [
+     "Bray"
+    ],
+    "Stationcode": [
+     "BRAY"
+    ],
+    "Querytime": [
+     "20:39:34"
+    ],
+    "Traindate": [
+     "14 Sep 2017"
+    ],
+    "Origin": [
+     "Bray"
+    ],
+    "Destination": [
+     "Howth"
+    ],
+    "Origintime": [
+     "20:55"
+    ],
+    "Destinationtime": [
+     "22:04"
+    ],
+    "Status": [
+     "No Information"
+    ],
+    "Lastlocation": [
+     ""
+    ],
+    "Duein": [
+     "16"
+    ],
+    "Late": [
+     "0"
+    ],
+    "Exparrival": [
+     "00:00"
+    ],
+    "Expdepart": [
+     "20:55"
+    ],
+    "Scharrival": [
+     "00:00"
+    ],
+    "Schdepart": [
+     "20:55"
+    ],
+    "Direction": [
+     "Northbound"
+    ],
+    "Traintype": [
+     "DART"
+    ],
+    "Locationtype": [
+     "O"
+    ]
+   },
+   {
+    "Servertime": [
+     "2017-09-14T20:39:34.65"
+    ],
+    "Traincode": [
+     "E831 "
+    ],
+    "Stationfullname": [
+     "Bray"
+    ],
+    "Stationcode": [
+     "BRAY"
+    ],
+    "Querytime": [
+     "20:39:34"
+    ],
+    "Traindate": [
+     "14 Sep 2017"
+    ],
+    "Origin": [
+     "Greystones"
+    ],
+    "Destination": [
+     "Malahide"
+    ],
+    "Origintime": [
+     "21:00"
+    ],
+    "Destinationtime": [
+     "22:20"
+    ],
+    "Status": [
+     "No Information"
+    ],
+    "Lastlocation": [
+     ""
+    ],
+    "Duein": [
+     "31"
+    ],
+    "Late": [
+     "0"
+    ],
+    "Exparrival": [
+     "21:09"
+    ],
+    "Expdepart": [
+     "21:10"
+    ],
+    "Scharrival": [
+     "21:09"
+    ],
+    "Schdepart": [
+     "21:10"
+    ],
+    "Direction": [
+     "Northbound"
+    ],
+    "Traintype": [
+     "DART"
+    ],
+    "Locationtype": [
+     "S"
+    ]
+   },
+   {
+    "Servertime": [
+     "2017-09-14T20:39:34.65"
+    ],
+    "Traincode": [
+     "E936 "
+    ],
+    "Stationfullname": [
+     "Bray"
+    ],
+    "Stationcode": [
+     "BRAY"
+    ],
+    "Querytime": [
+     "20:39:34"
+    ],
+    "Traindate": [
+     "14 Sep 2017"
+    ],
+    "Origin": [
+     "Bray"
+    ],
+    "Destination": [
+     "Howth"
+    ],
+    "Origintime": [
+     "21:25"
+    ],
+    "Destinationtime": [
+     "22:35"
+    ],
+    "Status": [
+     "No Information"
+    ],
+    "Lastlocation": [
+     ""
+    ],
+    "Duein": [
+     "46"
+    ],
+    "Late": [
+     "0"
+    ],
+    "Exparrival": [
+     "00:00"
+    ],
+    "Expdepart": [
+     "21:25"
+    ],
+    "Scharrival": [
+     "00:00"
+    ],
+    "Schdepart": [
+     "21:25"
+    ],
+    "Direction": [
+     "Northbound"
+    ],
+    "Traintype": [
+     "DART"
+    ],
+    "Locationtype": [
+     "O"
+    ]
+   },
+   {
+    "Servertime": [
+     "2017-09-14T20:39:34.65"
+    ],
+    "Traincode": [
+     "E832 "
+    ],
+    "Stationfullname": [
+     "Bray"
+    ],
+    "Stationcode": [
+     "BRAY"
+    ],
+    "Querytime": [
+     "20:39:34"
+    ],
+    "Traindate": [
+     "14 Sep 2017"
+    ],
+    "Origin": [
+     "Greystones"
+    ],
+    "Destination": [
+     "Malahide"
+    ],
+    "Origintime": [
+     "21:30"
+    ],
+    "Destinationtime": [
+     "22:50"
+    ],
+    "Status": [
+     "No Information"
+    ],
+    "Lastlocation": [
+     ""
+    ],
+    "Duein": [
+     "61"
+    ],
+    "Late": [
+     "0"
+    ],
+    "Exparrival": [
+     "21:39"
+    ],
+    "Expdepart": [
+     "21:40"
+    ],
+    "Scharrival": [
+     "21:39"
+    ],
+    "Schdepart": [
+     "21:40"
+    ],
+    "Direction": [
+     "Northbound"
+    ],
+    "Traintype": [
+     "DART"
+    ],
+    "Locationtype": [
+     "S"
+    ]
+   },
+   {
+    "Servertime": [
+     "2017-09-14T20:39:34.65"
+    ],
+    "Traincode": [
+     "E937 "
+    ],
+    "Stationfullname": [
+     "Bray"
+    ],
+    "Stationcode": [
+     "BRAY"
+    ],
+    "Querytime": [
+     "20:39:34"
+    ],
+    "Traindate": [
+     "14 Sep 2017"
+    ],
+    "Origin": [
+     "Bray"
+    ],
+    "Destination": [
+     "Howth"
+    ],
+    "Origintime": [
+     "21:55"
+    ],
+    "Destinationtime": [
+     "23:04"
+    ],
+    "Status": [
+     "No Information"
+    ],
+    "Lastlocation": [
+     ""
+    ],
+    "Duein": [
+     "76"
+    ],
+    "Late": [
+     "0"
+    ],
+    "Exparrival": [
+     "00:00"
+    ],
+    "Expdepart": [
+     "21:55"
+    ],
+    "Scharrival": [
+     "00:00"
+    ],
+    "Schdepart": [
+     "21:55"
+    ],
+    "Direction": [
+     "Northbound"
+    ],
+    "Traintype": [
+     "DART"
+    ],
+    "Locationtype": [
+     "O"
+    ]
+   },
+   {
+    "Servertime": [
+     "2017-09-14T20:39:34.65"
+    ],
+    "Traincode": [
+     "E127 "
+    ],
+    "Stationfullname": [
+     "Bray"
+    ],
+    "Stationcode": [
+     "BRAY"
+    ],
+    "Querytime": [
+     "20:39:34"
+    ],
+    "Traindate": [
+     "14 Sep 2017"
+    ],
+    "Origin": [
+     "Howth"
+    ],
+    "Destination": [
+     "Greystones"
+    ],
+    "Origintime": [
+     "19:30"
+    ],
+    "Destinationtime": [
+     "20:50"
+    ],
+    "Status": [
+     "En Route"
+    ],
+    "Lastlocation": [
+     "Departed Shankill"
+    ],
+    "Duein": [
+     "7"
+    ],
+    "Late": [
+     "5"
+    ],
+    "Exparrival": [
+     "20:44"
+    ],
+    "Expdepart": [
+     "20:46"
+    ],
+    "Scharrival": [
+     "20:39"
+    ],
+    "Schdepart": [
+     "20:41"
+    ],
+    "Direction": [
+     "Southbound"
+    ],
+    "Traintype": [
+     "DART"
+    ],
+    "Locationtype": [
+     "S"
+    ]
+   },
+   {
+    "Servertime": [
+     "2017-09-14T20:39:34.65"
+    ],
+    "Traincode": [
+     "E228 "
+    ],
+    "Stationfullname": [
+     "Bray"
+    ],
+    "Stationcode": [
+     "BRAY"
+    ],
+    "Querytime": [
+     "20:39:34"
+    ],
+    "Traindate": [
+     "14 Sep 2017"
+    ],
+    "Origin": [
+     "Malahide"
+    ],
+    "Destination": [
+     "Bray"
+    ],
+    "Origintime": [
+     "19:45"
+    ],
+    "Destinationtime": [
+     "20:54"
+    ],
+    "Status": [
+     "En Route"
+    ],
+    "Lastlocation": [
+     "Arrived Glenageary"
+    ],
+    "Duein": [
+     "16"
+    ],
+    "Late": [
+     "1"
+    ],
+    "Exparrival": [
+     "20:55"
+    ],
+    "Expdepart": [
+     "00:00"
+    ],
+    "Scharrival": [
+     "20:54"
+    ],
+    "Schdepart": [
+     "00:00"
+    ],
+    "Direction": [
+     "Southbound"
+    ],
+    "Traintype": [
+     "DART"
+    ],
+    "Locationtype": [
+     "D"
+    ]
+   },
+   {
+    "Servertime": [
+     "2017-09-14T20:39:34.65"
+    ],
+    "Traincode": [
+     "E128 "
+    ],
+    "Stationfullname": [
+     "Bray"
+    ],
+    "Stationcode": [
+     "BRAY"
+    ],
+    "Querytime": [
+     "20:39:34"
+    ],
+    "Traindate": [
+     "14 Sep 2017"
+    ],
+    "Origin": [
+     "Howth"
+    ],
+    "Destination": [
+     "Greystones"
+    ],
+    "Origintime": [
+     "20:00"
+    ],
+    "Destinationtime": [
+     "21:20"
+    ],
+    "Status": [
+     "En Route"
+    ],
+    "Lastlocation": [
+     "Departed Sandymount"
+    ],
+    "Duein": [
+     "33"
+    ],
+    "Late": [
+     "1"
+    ],
+    "Exparrival": [
+     "21:10"
+    ],
+    "Expdepart": [
+     "21:12"
+    ],
+    "Scharrival": [
+     "21:09"
+    ],
+    "Schdepart": [
+     "21:11"
+    ],
+    "Direction": [
+     "Southbound"
+    ],
+    "Traintype": [
+     "DART"
+    ],
+    "Locationtype": [
+     "S"
+    ]
+   },
+   {
+    "Servertime": [
+     "2017-09-14T20:39:34.65"
+    ],
+    "Traincode": [
+     "E229 "
+    ],
+    "Stationfullname": [
+     "Bray"
+    ],
+    "Stationcode": [
+     "BRAY"
+    ],
+    "Querytime": [
+     "20:39:34"
+    ],
+    "Traindate": [
+     "14 Sep 2017"
+    ],
+    "Origin": [
+     "Malahide"
+    ],
+    "Destination": [
+     "Bray"
+    ],
+    "Origintime": [
+     "20:15"
+    ],
+    "Destinationtime": [
+     "21:24"
+    ],
+    "Status": [
+     "En Route"
+    ],
+    "Lastlocation": [
+     "Departed Clontarf Road"
+    ],
+    "Duein": [
+     "47"
+    ],
+    "Late": [
+     "2"
+    ],
+    "Exparrival": [
+     "21:26"
+    ],
+    "Expdepart": [
+     "00:00"
+    ],
+    "Scharrival": [
+     "21:24"
+    ],
+    "Schdepart": [
+     "00:00"
+    ],
+    "Direction": [
+     "Southbound"
+    ],
+    "Traintype": [
+     "DART"
+    ],
+    "Locationtype": [
+     "D"
+    ]
+   },
+   {
+    "Servertime": [
+     "2017-09-14T20:39:34.65"
+    ],
+    "Traincode": [
+     "E129 "
+    ],
+    "Stationfullname": [
+     "Bray"
+    ],
+    "Stationcode": [
+     "BRAY"
+    ],
+    "Querytime": [
+     "20:39:34"
+    ],
+    "Traindate": [
+     "14 Sep 2017"
+    ],
+    "Origin": [
+     "Howth"
+    ],
+    "Destination": [
+     "Greystones"
+    ],
+    "Origintime": [
+     "20:30"
+    ],
+    "Destinationtime": [
+     "21:50"
+    ],
+    "Status": [
+     "En Route"
+    ],
+    "Lastlocation": [
+     "Arrived Howth Junction"
+    ],
+    "Duein": [
+     "61"
+    ],
+    "Late": [
+     "-1"
+    ],
+    "Exparrival": [
+     "21:38"
+    ],
+    "Expdepart": [
+     "21:40"
+    ],
+    "Scharrival": [
+     "21:39"
+    ],
+    "Schdepart": [
+     "21:41"
+    ],
+    "Direction": [
+     "Southbound"
+    ],
+    "Traintype": [
+     "DART"
+    ],
+    "Locationtype": [
+     "S"
+    ]
+   },
+   {
+    "Servertime": [
+     "2017-09-14T20:39:34.65"
+    ],
+    "Traincode": [
+     "E230 "
+    ],
+    "Stationfullname": [
+     "Bray"
+    ],
+    "Stationcode": [
+     "BRAY"
+    ],
+    "Querytime": [
+     "20:39:34"
+    ],
+    "Traindate": [
+     "14 Sep 2017"
+    ],
+    "Origin": [
+     "Howth"
+    ],
+    "Destination": [
+     "Bray"
+    ],
+    "Origintime": [
+     "20:45"
+    ],
+    "Destinationtime": [
+     "21:57"
+    ],
+    "Status": [
+     "No Information"
+    ],
+    "Lastlocation": [
+     ""
+    ],
+    "Duein": [
+     "78"
+    ],
+    "Late": [
+     "0"
+    ],
+    "Exparrival": [
+     "21:57"
+    ],
+    "Expdepart": [
+     "00:00"
+    ],
+    "Scharrival": [
+     "21:57"
+    ],
+    "Schdepart": [
+     "00:00"
+    ],
+    "Direction": [
+     "Southbound"
+    ],
+    "Traintype": [
+     "DART"
+    ],
+    "Locationtype": [
+     "D"
+    ]
+   }
+  ]
+ }
+}
