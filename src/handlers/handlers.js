@@ -1,6 +1,15 @@
 const DatabaseProxy = require('../util/database');
 
-const { NO_FAVOURITE, NO_DIRECTION_ATTRIBUTE, NO_FAVOURITE_REPEAT, NO_TRAINS, NO_SERVICE } = require('../util/responses');
+const { 
+  NO_FAVOURITE,
+  NO_DIRECTION_ATTRIBUTE,
+  NO_FAVOURITE_REPEAT,
+  NO_TRAINS,
+  NO_SERVICE,
+  HELP,
+  UNHANDLED,
+  UNHANDLED_REPROMPT,
+} = require('../util/responses');
 const { REALTIME_SESSION } = require('../util/constants');
 const RealTimeDart = require('../util/realTimeDart');
 
@@ -9,9 +18,7 @@ module.exports = {
   getIntents: (userId) => {
     return {
       'AMAZON.HelpIntent': function () {
-        let speechOutput = '';
-        speechOutput += 'I should contain help for your skill.';
-        this.emit(':ask', speechOutput, speechOutput);
+        this.emit(':ask', HELP, HELP);
       },
       'AMAZON.StopIntent': function () {
         const speechOutput = 'Goodbye';
@@ -24,7 +31,7 @@ module.exports = {
       },
       SetFavouriteIntent: function () {
         const db = new DatabaseProxy(process.env.tableId, userId);
-        db.store(this.event.request.intent.slots.StationName.value).then((res) => {
+        db.store(this.event.request.intent.slots.StationName.value).then(() => {
           this.emit(':tell', `Alright, I set ${this.event.request.intent.slots.StationName.value} as your favourite station.`, `Alright, I set ${this.event.request.intent.slots.StationName.value} as your favourite station.`);
         });
       },
@@ -59,7 +66,7 @@ module.exports = {
         times.next().then((res) => {
           if (times.isFinished()) { // Looped
             this.attributes[REALTIME_SESSION] = times.getState();
-            this.emit(':tell', `This is the last train.  ${res}`, res);
+            this.emit(':tell', `The next service is the last.  ${res}`, res);
             return;
           }
           this.attributes[REALTIME_SESSION] = times.getState();
@@ -87,7 +94,7 @@ module.exports = {
         });
       },
       Unhandled: function () {
-        this.emit(':ask', 'I am not sure what you meant, say help me if you do not know what to say.', 'Say help me for help.');
+        this.emit(':ask', UNHANDLED, UNHANDLED_REPROMPT);
       },
     };
   },
