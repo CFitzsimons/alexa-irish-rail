@@ -9,6 +9,7 @@ const {
   HELP,
   UNHANDLED,
   UNHANDLED_REPROMPT,
+  INVALID_STATION,
 } = require('../util/responses');
 const { REALTIME_SESSION } = require('../util/constants');
 const RealTimeDart = require('../util/realTimeDart');
@@ -30,6 +31,9 @@ module.exports = {
         this.emit(':tell', speechOutput);
       },
       SetFavouriteIntent: function () {
+        if (!this.event.request.intent.slots.StationName && !this.event.request.intent.slots.StationName.value) {
+          this.emit(':ask', INVALID_STATION, INVALID_STATION);
+        }
         const db = new DatabaseProxy(process.env.tableId, userId);
         db.store(this.event.request.intent.slots.StationName.value).then(() => {
           this.emit(':tell', `Alright, I set ${this.event.request.intent.slots.StationName.value} as your favourite station.`, `Alright, I set ${this.event.request.intent.slots.StationName.value} as your favourite station.`);
