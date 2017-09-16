@@ -128,6 +128,9 @@ class RealTimeDart {
             this.stationData = [];
           } else {
             this.stationData = result.ArrayOfObjStationData.objStationData;
+            this.stationData = this.stationData.sort((left, right) => {
+              return parseInt(left.Duein[0]) - parseInt(right.Duein[0]);
+            });
           }
           resolve(this.stationData);
         });
