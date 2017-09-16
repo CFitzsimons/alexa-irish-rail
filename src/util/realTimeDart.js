@@ -20,7 +20,7 @@ class RealTimeDart {
     return stationString;
   }
   static humanReadableNext(trainData) {
-    return `This service will arrive in ${trainData.Duein[0]} minutes and is bound for ${trainData.Destination[0]}`;
+    return `A ${trainData.Direction[0]} service is due in ${trainData.Duein[0]} minutes from ${trainData.Stationfullname[0]}.  The end destination will be ${trainData.Destination[0]}.  `;
   }
 
   constructor(station, state) {

@@ -7,8 +7,11 @@ module.exports = {
   UNHANDLED: 'I didn\'t understand.  Say help and I\'ll show you some commands.',
   UNHANDLED_REPROMPT: 'Say help and I\'ll show you some commands.',
   INVALID_STATION: 'I\'m not sure what station you meant, could you say, favourite, followed by the station name again please?',
-  HELP: 'Some options for you:'
-    + 'Set favourite by saying the word, \'favourite\', followed by a station.  Like: favourite Sutton.  '
+  ELICIT_STATION: 'What station do you want to favourite?',
+  NEXT_REPROMPT: 'Say, next, if you want a later service or, stop, to exit.  ',
+  FIRST_RUN: 'Welcome to next train.  Looks like you haven\'t set a favourite yet.  Try saying, set new favourite. You can also say help for more options.',
+  FIRST_RUN_REPROMPT: 'Try saying, set new favourite. You can also say help for more options.',
+  HELP: 'You can setup or change a favourite by saying, set new favourite.  '
     + 'Ask for the next train by launching the skill again.  '
     + 'After given a train, say, next, to get the train after.  ',
 };
