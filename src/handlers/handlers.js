@@ -1,19 +1,15 @@
 const DatabaseProxy = require('../util/database');
 
-const { 
-  NO_FAVOURITE,
-  NO_DIRECTION_ATTRIBUTE,
-  NO_FAVOURITE_REPEAT,
-  NO_TRAINS,
-  NO_SERVICE,
+const {
   HELP,
   UNHANDLED,
   UNHANDLED_REPROMPT,
-  INVALID_STATION,
+  NEXT_REPROMPT,
+  FIRST_RUN,
+  FIRST_RUN_REPROMPT,
 } = require('../util/responses');
 const { REALTIME_SESSION } = require('../util/constants');
 const RealTimeDart = require('../util/realTimeDart');
-
 /* Intent handlers */
 module.exports = {
   getIntents: (userId) => {
@@ -31,71 +27,61 @@ module.exports = {
         this.emit(':tell', speechOutput);
       },
       SetFavouriteIntent: function () {
-        if (!this.event.request.intent.slots.StationName && !this.event.request.intent.slots.StationName.value) {
-          this.emit(':ask', INVALID_STATION, INVALID_STATION);
-        }
-        const db = new DatabaseProxy(process.env.tableId, userId);
-        db.store(this.event.request.intent.slots.StationName.value).then(() => {
-          this.emit(':tell', `Alright, I set ${this.event.request.intent.slots.StationName.value} as your favourite station.`, `Alright, I set ${this.event.request.intent.slots.StationName.value} as your favourite station.`);
-        });
-      },
-      DirectionIntent: function () {
-        if (!this.attributes[REALTIME_SESSION] || !this.event.request.intent.slots.DirectionSlot) {
-          this.emit(':tell', NO_DIRECTION_ATTRIBUTE, NO_DIRECTION_ATTRIBUTE);
+        if (!this.event.request
+          || !this.event.request.intent
+          || !this.event.request.intent.slots
+          || !this.event.request.intent.slots.StationName
+          || !this.event.request.intent.slots.StationName.value) {
+          this.emit(':delegate');
           return;
         }
-        const times = new RealTimeDart(null, this.attributes[REALTIME_SESSION]);
-        times.pruneDirections(this.event.request.intent.slots.DirectionSlot.value.toLowerCase()).then(() => {
-          if (times.stationData.length === 0) {
-            this.emit(':tell', NO_TRAINS, NO_TRAINS);
+        const slotValue = this.event.request.intent.slots.StationName.value;
+        const db = new DatabaseProxy(process.env.tableId, userId);
+        db.store(slotValue).then(() => {
+          this.emit(':tell', `I saved ${slotValue} as your favourite!`, `I saved ${slotValue} as your favourite!`);
+        });
+      },
+      FirstRun: function () {
+        this.emit(':ask', FIRST_RUN, FIRST_RUN_REPROMPT);
+      },
+      FavouriteIntent: function () {
+        /* Cases:
+        *    1. No favourite set: First run, ask the user to set a favourite
+        *    2. Favourite set: Construct object and call next.
+        */
+        const db = new DatabaseProxy(process.env.tableId, userId);
+        db.fetch().then((res) => {
+          /* No favourite station found */
+          if (!res.Item || !res.Item.Station) {
+            this.emit('FirstRun');
             return;
           }
-          times.next().then((res) => {
-            if (times.isFinished()) { // Looped
-              this.attributes[REALTIME_SESSION] = times.getState();
-              this.emit(':tell', `This is the last train.  ${res}`, res);
-              return;
-            }
+          const times = new RealTimeDart(res.Item.Station, this.attributes[REALTIME_SESSION]);
+          times.buildDestinationList().then(() => {
             this.attributes[REALTIME_SESSION] = times.getState();
-            this.emit(':ask', res, res);
+            this.emit('NextIntent');
           });
         });
       },
       NextIntent: function () {
         if (!this.attributes[REALTIME_SESSION]) {
-          this.emit(':tell', NO_DIRECTION_ATTRIBUTE, NO_DIRECTION_ATTRIBUTE);
+          this.emit('FavouriteIntent');
           return;
         }
         const times = new RealTimeDart(null, this.attributes[REALTIME_SESSION]);
-        times.next().then((res) => {
-          if (times.isFinished()) { // Looped
-            this.attributes[REALTIME_SESSION] = times.getState();
-            this.emit(':tell', `The next service is the last.  ${res}`, res);
-            return;
-          }
+        times.next().then((nextSpeech) => {
           this.attributes[REALTIME_SESSION] = times.getState();
-          this.emit(':ask', res, res);
+          let speech = nextSpeech;
+          let type = ':ask';
+          if (times.isFinished()) {
+            type = ':tell';
+            speech += 'This is the last service.';
+          }
+          this.emit(type, speech, NEXT_REPROMPT);
         });
       },
       LaunchRequest: function () {
-        const db = new DatabaseProxy(process.env.tableId, userId);
-        db.fetch().then((response) => {
-          if (response.Item && response.Item.Station) {
-            /* Preform lookup */
-            const times = new RealTimeDart(response.Item.Station);
-            times.getDestinations().then((res) => {
-              if (res === 'NONE') {
-                this.emit(':tell', NO_SERVICE, NO_SERVICE);
-                return;
-              }
-              this.attributes[REALTIME_SESSION] = times.getState();
-              this.emit(':ask', res, res);
-            });
-            return;
-          }
-          /* No favourite is set, ask the user if they'd like to set one. */
-          this.emit(':ask', NO_FAVOURITE, NO_FAVOURITE_REPEAT);
-        });
+        this.emit('FavouriteIntent');
       },
       Unhandled: function () {
         this.emit(':ask', UNHANDLED, UNHANDLED_REPROMPT);
