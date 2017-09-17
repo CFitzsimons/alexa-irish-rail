@@ -20,7 +20,11 @@ class RealTimeDart {
     return stationString;
   }
   static humanReadableNext(trainData) {
-    return `A ${trainData.Direction[0]} service is due in ${trainData.Duein[0]} minutes from ${trainData.Stationfullname[0]}.  The end destination will be ${trainData.Destination[0]}.  `;
+    let direction = trainData.Direction[0];
+    if (direction.toLowerCase().indexOf('to') !== -1) {
+      direction = direction.split(' ')[1];
+    }
+    return `A ${direction} service is due in ${trainData.Duein[0]} minutes from ${trainData.Stationfullname[0]}.  The end destination will be ${trainData.Destination[0]}.  `;
   }
 
   constructor(station, state) {
@@ -129,7 +133,7 @@ class RealTimeDart {
           } else {
             this.stationData = result.ArrayOfObjStationData.objStationData;
             this.stationData = this.stationData.sort((left, right) => {
-              return parseInt(left.Duein[0]) - parseInt(right.Duein[0]);
+              return parseInt(left.Duein[0], 10) - parseInt(right.Duein[0], 10);
             });
           }
           resolve(this.stationData);
