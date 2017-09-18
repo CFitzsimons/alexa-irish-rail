@@ -20,6 +20,9 @@ class RealTimeDart {
     return stationString;
   }
   static humanReadableNext(trainData) {
+    if (!trainData || !trainData.Direction || !trainData.Duein || !trainData.Stationfullname) {
+      return 'The status of the next service is not available currenlty.';
+    }
     let direction = trainData.Direction[0];
     if (direction.toLowerCase().indexOf('to') !== -1) {
       direction = direction.split(' ')[1];
@@ -115,9 +118,11 @@ class RealTimeDart {
       /* Building destinationList from station data */
       this.destinationList = [];
       for (const station of this.stationData) {
-        const destination = station.Direction[0];
-        if (this.destinationList.indexOf(destination.toLowerCase()) === -1) {
-          this.destinationList.push(destination.toLowerCase());
+        if (station && station.Direction) {
+          const destination = station.Direction[0];
+          if (this.destinationList.indexOf(destination.toLowerCase()) === -1) {
+            this.destinationList.push(destination.toLowerCase());
+          }
         }
       }
       resolve(this.destinationList);
