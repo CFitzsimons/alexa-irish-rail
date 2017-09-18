@@ -3,7 +3,7 @@
 const assert = require('assert');
 
 const RealTimeDart = require('../src/util/realTimeDart');
-const suttonStation = require('../scarped/test_sutton.json');
+const suttonStation = require('../scraped/test_sutton.json');
 
 const defaultStation = 'Sutton';
 const defaultDestinationList = 'Which direction are you heading? southbound or northbound';

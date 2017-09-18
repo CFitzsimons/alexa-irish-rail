@@ -15,6 +15,6 @@ if (!process.env.tableId) {
 exports.handler = (event, context) => {
   const alexa = Alexa.handler(event, context);
   alexa.appId = process.env.appId;
-  alexa.registerHandlers(handlers.getIntents(event.session.user.userId));
+  alexa.registerHandlers(handlers);
   alexa.execute();
 };
