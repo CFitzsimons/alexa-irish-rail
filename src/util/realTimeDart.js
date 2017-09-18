@@ -20,7 +20,7 @@ class RealTimeDart {
     return stationString;
   }
   static humanReadableNext(trainData) {
-    if (!trainData || !trainData.Direction) {
+    if (!trainData || !trainData.Direction || !trainData.Duein || !trainData.Stationfullname) {
       return 'The status of the next service is not available currenlty.';
     }
     let direction = trainData.Direction[0];
