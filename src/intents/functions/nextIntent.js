@@ -14,7 +14,9 @@ module.exports = function next() {
     let type = ':ask';
     if (times.isFinished()) {
       type = ':tell';
-      speech += 'This is the last service.';
+      speech += 'This is the last service';
+    } else {
+      speech += 'Say next for a later service.';
     }
     this.emit(type, speech, NEXT_REPROMPT);
   });
