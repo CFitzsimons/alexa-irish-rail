@@ -1,6 +1,8 @@
 const parseString = require('xml2js').parseString;
 const request = require('request');
 
+const MAX_MINUTES = 90;
+
 const API_BASE = 'http://api.irishrail.ie/realtime/realtime.asmx/';
 class RealTimeDart {
   static humanReadableDestinations(destinations) {
@@ -129,7 +131,7 @@ class RealTimeDart {
     });
   }
   buildStationList() {
-    const url = `${API_BASE}getStationDataByNameXML?StationDesc=${this.station}`;
+    const url = `${API_BASE}getStationDataByNameXML?StationDesc=${this.station}&numMins=${MAX_MINUTES}`;
     return new Promise((resolve) => {
       request(url, (error, response, body) => {
         parseString(body, (err, result) => {
