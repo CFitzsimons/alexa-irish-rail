@@ -14,59 +14,20 @@ The best way to contribute is to take one of the intents below and mark yourself
 3. Please supply at least 'some' tests for your code (add an extra file in the /test directory).
 4. Create a branch to work on and submit a pull request on Github.  Don't merge straight into master without a pull request.  
 
-Intents
+
+Roadmap
 =======
 
-The following intents are proposed for the system.  
+V 0.1
+- [x] Set favourite - sets the users favourite {station}
+- [x] Next Train - gets the next train at {favourite}
+- [ ] Next local train - gets the next train at {localStation} (location data)
 
-"What stations are near me?"
-----------------------------
+V 0.2
+- [ ] List stations - grab stations near the user
+- [ ] List stations near {station} - grab stations near the {station}
 
-Alexa should return the top 3 nearest stations in order of distance.  
-
-
-"What is my nearest station?"
------------------------------
-
-Alexa should return the nearest station in kilometers (aprox.)
-
-"When is my next local train(/DART)?" (1)
------------------------------------
-
-Alexa should get the nearest station to the user and return a question, asking (Northbound/Southbound/Cork/...).  
-
-"When is my next local train(/DART)?" (2) -- "Northbound(/Southbound/Cork/...)"
--------------------------------------------------------------------------
-
-Alexa should get the next service going the direction the user specified.
-
-
-"Set favourite as {X}" [REDUNDANT?]
-----------------------
-
-Alexa should set the users favourite station as {X}.
-
-"When is my next train(/DART)?" (1)
------------------------------------
-
-Alexa should get the favourite station and return a question, asking (Northbound/Southbound/Cork/...).  
-
-"When is my next train(/DART)?" (2) -- "Northbound(/Southbound/Cork/...)"
--------------------------------------------------------------------------
-
-Alexa should get the next service going the direction the user specified.
-
-"How to get between {X} and {Y}?" (1)
----------------------------------
-
-Alexa should return a question, asking when you are likely to leave {X} (based on route departure times)
-
-"How to get between {X} and {Y}?" (2) --- "soonest/next, second, third, 17:22..."
----------------------------------
-
-Alexa will return a route with a departure time from {X}, any change overs, the cost and the arrival time at {Y}.
-
-"Repeat that last response"
----------------------------
-
-Repeats the last command alexa spoke.  
+V 0.3
+- [ ] Plan my route - starts a dialogue that works out a route from {station} to {station}
+- [ ] Save a route - saves a route
+- [ ] Delete a route - deletes a saved route
